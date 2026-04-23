@@ -4,6 +4,7 @@ import { createNotesListSlice } from '@/store/notes/notesListSlice';
 import { createAddEditNoteSlice } from '@/store/notes/addEditNoteSlice';
 import { createDeleteNoteSlice } from '@/store/notes/deleteNoteSlice';
 import { devtools } from 'zustand/middleware';
+import { DevtoolsOptions } from 'zustand/middleware/devtools';
 
 export const useNotesStore = create<NotesStore>()(
   devtools((...args) => ({
@@ -15,7 +16,7 @@ export const useNotesStore = create<NotesStore>()(
     name: 'NotesStore',
     trace: true,
     enabled: typeof window !== 'undefined'
-  })
+  } as DevtoolsOptions)
 )
 
 export const selectAddEditNoteSlice = (state: NotesStore) => ({

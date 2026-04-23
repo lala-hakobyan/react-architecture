@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.note-app-domain.com; style-src 'self' 'unsafe-inline' https://cdn.note-app-domain.com; img-src 'self' blob: data: https://cdn.note-app-domain.com; connect-src 'self' http://localhost:3010 https://note-app-domain.com; ",
           },
+          // { key: 'Cache-Control', value: 'no-store' } // optional, for bf-cache issue debugging
         ],
       },
       {
@@ -49,7 +50,7 @@ const nextConfig: NextConfig = {
         source: '/workers/image-service-worker.js',
         headers: [
           { key: 'Service-Worker-Allowed', value: '/' },
-          // { key: 'Cache-Control', value: 'no-store' }, // optional, but helpful during debugging
+          //{ key: 'Cache-Control', value: 'no-store' }, // optional, but helpful during debugging
         ],
       },
     ];
