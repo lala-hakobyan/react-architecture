@@ -176,6 +176,7 @@ export default function AddEditNote() {
       }
 
       <Modal isOpen={addEditNoteState.isNoteUpdateError} title="Error happened" onClosed={() => resetErrorModal()}>
+        <Modal.Header />
         <Modal.Body>
           {AddEditNoteConstants.ui.addEditError}
         </Modal.Body>
