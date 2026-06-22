@@ -8,14 +8,14 @@ export default function Contact() {
 
         <div>
             <h3>Open an issue on Github</h3>
-            <p>Github Issues Tab: <a href="https://github.com/lala-hakobyan/react-poc/issues" target="_blank" rel="noopener noreferrer">github.com/lala-hakobyan/react-poc/issues</a></p>
+            <p>Github Issues Tab: <a href="https://github.com/lala-hakobyan/react-architecture/issues" target="_blank" rel="noopener noreferrer">github.com/lala-hakobyan/react-architecture/issues</a></p>
         </div>
 
         <div>
             <h3>Reach out directly</h3>
             <ul>
                 <li>Email: <a href="mailto:hakobyanlala@gmail.com">hakobyanlala@gmail.com</a></li>
-                <li>Linkedin:&nbsp;  
+                <li>Linkedin:&nbsp;
                     <a
                     href="https://www.linkedin.com/in/lala-hakobyan"
                     target="_blank"

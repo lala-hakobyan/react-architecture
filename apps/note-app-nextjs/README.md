@@ -1,5 +1,5 @@
-# React Note POC App with Next.js
-A scalable and maintainable React Next.js POC Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
+# React Note Starter App with Next.js
+A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
 This branch contains specific **debugging experiments** and **performance bottleneck simulations** to help you master debugging tools and concepts described in my **[Front-end Debugging Tools Handbook](https://github.com/lala-hakobyan/front-end-debugging-handbook)**.
 
 
@@ -21,7 +21,9 @@ The project is compatible with the following technology versions:
 
 ## Features and Best Practices
 This application can be used as a foundation for real production apps due to its maintainable and scalable architecture and isolation of layers: data (API), state, logger, cache.
+
 It contains the following useful features and best practices:
+
 - **Server components through Next.js**
 - **Responsive, mobile-first layout**
 - **Dark/light themes support**
@@ -60,7 +62,8 @@ It contains the following useful features and best practices:
   User-friendly errors are displayed for each API failure to provide a better user experience.
 
 ## What is Missing
-Below are the features that are missing to make this POC fully applicable for a production app foundation:
+Below are the features that are missing to make this starter project applicable for a full production app:
+
 - **Enhanced accessibility integration (WCAG compliance)**
 - **Image optimizations**
 - **Security enhancement through authentication integration**

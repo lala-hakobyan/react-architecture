@@ -1,13 +1,13 @@
-# React Todo POC App with Vite
-A lightweight React POC **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
+# React Todo Starter App with Vite
+A lightweight React starter **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
 
 ## About
-This is a simple React POC Todo application built with **Vite** which is designed to work locally with mock back-end API. It provides the following functionalities:
+This is a simple React starter Todo application built with **Vite** which is designed to work locally with mock back-end API. It provides the following functionalities:
 - Add, delete and mark todos as completed.
 - Add high-priority todos by specifying `!` at the end of the text.
 - View indicator of online/offline status in the header.<br>
   **Note:** Offline status in this context means that the user is able to work locally, while being disconnected from the internet. It assumes that the data will be synced with the cloud when he/she becomes online.
-  However, since it is a POC app, it works only through local APIs and has no offline functionality support.
+  However, since it is a starter app, it works only through local APIs and has no offline functionality support.
   Offline Sync Status can be toggled by choosing **Offline** mode from the **Network** panel throttling dropdown.
 
 

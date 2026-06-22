@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section className={`${styles.about} mb-md`}>
       <PageSubTitle title={AboutConstants.pageSubtitle} />
-      <p>My Notes is a free POC app that lets you quickly create, update and delete notes. In the future, you can also view them in different layouts and use various search options.</p>
+      <p>My Notes is a free starter app that lets you quickly create, update and delete notes. In the future, you can also view them in different layouts and use various search options.</p>
       <ul className={styles.about__list}>
         <li className={styles.about__listItem}>
           <p>Please note: this is just a proof of concept. It loads a dummy note list by default from a local back-end and does not use a real database.</p>

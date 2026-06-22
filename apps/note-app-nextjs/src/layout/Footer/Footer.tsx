@@ -18,7 +18,7 @@ export default function Footer() {
       }
 
       <footer className={styles.footer}>
-        <p>© {currentYear} My Notes App POC - Made by <a className="primary-link" href={GlobalConstants.linkedinUrl} target="_blank">Lala Hakobyan</a></p>
+        <p>© {currentYear} My Notes Starter App - Made by <a className="primary-link" href={GlobalConstants.linkedinUrl} target="_blank">Lala Hakobyan</a></p>
       </footer>
     </>
   )

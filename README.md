@@ -1,6 +1,6 @@
-# React POC Projects
+# React Architecture Starter Projects
 
-A collection of React POC starter projects designed to reflect best practices in modern React development. The projects are intended for experimenting and debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture POCs as a foundation for real production apps.<br>
+A collection of React starter projects designed to reflect best practices in modern React development. The projects are intended for experimenting and debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture foundations for real production apps.<br>
 This branch contains specific **debugging experiments** and **performance bottleneck simulations** to help you master debugging tools and concepts described in my **[Front-end Debugging Tools Handbook](https://github.com/lala-hakobyan/front-end-debugging-handbook)**.
 It is the primary branch used for experimenting with debugging features and capturing screenshots for the handbook.
 Most of the specific debugging experiments and performance bottleneck simulations are located in the Next.js project (`apps/note-app-nextjs`).
@@ -8,9 +8,9 @@ Most of the specific debugging experiments and performance bottleneck simulation
 
 ## Projects
 
-### [Next.js React POC Note Application (`note-app-nextjs`)](./apps/note-app-nextjs)
+### [Next.js React Note Application (`note-app-nextjs`)](./apps/note-app-nextjs)
 
-A scalable and maintainable React Next.js POC Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
+A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
 
 This application can be used as a foundation for real production apps due to its maintainable and scalable architecture and isolation of layers: data (API), state, logger, cache.
 It contains the following useful features and best practices:
@@ -29,9 +29,9 @@ It contains the following useful features and best practices:
 - **Integrated linting**
 - **Advanced error handling**
 
-### [React Todo POC App with Vite (`todo-app-vite`)](./apps/todo-app-vite)
+### [React Todo App with Vite (`todo-app-vite`)](./apps/todo-app-vite)
 
-A lightweight React POC **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
+A lightweight React starter **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
 
 While this is not a full production-ready application, there are several features and best practices you can explore to adapt in your production-ready applications:
 - **TypeScript-based, fully typed code**
@@ -41,7 +41,7 @@ While this is not a full production-ready application, there are several feature
 - **Online/offline sync indicator**
 - **Integrated linting**
 
-> **Note:** The [debugging-handbook-demo-v1](https://github.com/lala-hakobyan/react-poc/tree/debugging-handbook-demo-v1) branch of this repository is the version used for [Front-end Debugging Tools Handbook](https://github.com/lala-hakobyan/front-end-debugging-handbook) specific React features and Redux state experimentation and debugging.
+> **Note:** The [debugging-handbook-demo-v1](https://github.com/lala-hakobyan/react-architecture/tree/debugging-handbook-demo-v1) branch of this repository is the version used for [Front-end Debugging Tools Handbook](https://github.com/lala-hakobyan/front-end-debugging-handbook) specific React features and Redux state experimentation and debugging.
 The projects may contain only slight visual changes compared to screenshots presented in the handbook.
 
 
@@ -64,16 +64,16 @@ This repository features proof-of-concept front-end starter applications that al
 The underlying source code and CSS authored by Lala Hakobyan are licensed under the [MIT License](./LICENSE-CODE) and may be used in personal and commercial projects.
 
 **Official Source**<br>
-For the latest updates, please refer to the official repository: https://github.com/lala-hakobyan/react-poc
+For the latest updates, please refer to the official repository: https://github.com/lala-hakobyan/react-architecture
 
 **Attribution Example**<br>
 If you reference this project or use the source code in your own documentation, you can use the following attribution format:
 
-> **Source:** "My Notes App POC" by Lala Hakobyan. Copyright © 2026. All rights reserved. Available at: https://github.com/lala-hakobyan/react-poc
+> **Source:** "My Notes Starter App" by Lala Hakobyan. Copyright © 2026. All rights reserved. Available at: https://github.com/lala-hakobyan/react-architecture
 
 
 ## Feedback and Issues
-- If you found a bug or have feedback, please feel free to reach out via [LinkedIn](https://www.linkedin.com/in/lala-hakobyan) or submit an issue on the [**Issues page**](https://github.com/lala-hakobyan/react-poc/issues) on GitHub.
+- If you found a bug or have feedback, please feel free to reach out via [LinkedIn](https://www.linkedin.com/in/lala-hakobyan) or submit an issue on the [**Issues page**](https://github.com/lala-hakobyan/react-architecture/issues) on GitHub.
 - ❌ **Please do not submit Pull Requests** (I am not accepting external contributions at this time).
 
 
