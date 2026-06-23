@@ -1,6 +1,6 @@
 # React Architecture Starter Projects
 
-A collection of React starter projects designed to reflect best practices in modern React development. The projects are intended for experimenting and debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture foundations for real production apps.<br>
+A collection of React starter projects designed to reflect best practices in modern React development. The projects are intended for debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture foundations for real production apps.<br>
 This branch contains specific **debugging experiments** and **performance bottleneck simulations** to help you master debugging tools and concepts described in my **[Front-end Debugging Tools Handbook](https://github.com/lala-hakobyan/front-end-debugging-handbook)**.
 It is the primary branch used for experimenting with debugging features and capturing screenshots for the handbook.
 Most of the specific debugging experiments and performance bottleneck simulations are located in the Next.js project (`apps/note-app-nextjs`).
@@ -10,7 +10,7 @@ Most of the specific debugging experiments and performance bottleneck simulation
 
 ### [Next.js React Note Application (`note-app-nextjs`)](./apps/note-app-nextjs)
 
-A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
+A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, powered by a local mock back-end API.
 
 This application can be used as a foundation for real production apps due to its maintainable and scalable architecture and isolation of layers: data (API), state, logger, cache.
 It contains the following useful features and best practices:
@@ -31,7 +31,7 @@ It contains the following useful features and best practices:
 
 ### [React Todo App with Vite (`todo-app-vite`)](./apps/todo-app-vite)
 
-A lightweight React starter **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
+A lightweight React starter **Todo application** built with **Vite** and **Redux**, powered by a local mock back-end API.
 
 While this is not a full production-ready application, there are several features and best practices you can explore to adapt in your production-ready applications:
 - **TypeScript-based, fully typed code**
