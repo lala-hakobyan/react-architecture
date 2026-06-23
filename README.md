@@ -7,7 +7,7 @@ A collection of React starter projects designed to reflect best practices in mod
 
 ### [Next.js React Note Application (`note-app-nextjs`)](./apps/note-app-nextjs)
 
-A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
+A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, powered by a local mock back-end API.
 
 This application can be used as a foundation for real production apps due to its maintainable and scalable architecture and isolation of layers: data (API), state, logger, cache.
 It contains the following useful features and best practices:
@@ -28,7 +28,7 @@ It contains the following useful features and best practices:
 
 ### [React Todo App with Vite (`todo-app-vite`)](./apps/todo-app-vite)
 
-A lightweight React starter **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
+A lightweight React starter **Todo application** built with **Vite** and **Redux**, powered by a local mock back-end API.
 
 While this is not a full production-ready application, there are several features and best practices you can explore to adapt in your production-ready applications:
 - **TypeScript-based, fully typed code**

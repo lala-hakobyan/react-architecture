@@ -1,5 +1,5 @@
 # React Note Starter App with Next.js
-A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, served by a local mock back-end API.
+A scalable and maintainable React Next.js starter Note management application to serve as a foundation for real production apps, powered by a local mock back-end API.
 
 ## About
 This project is designed to work locally with a mock back-end API. It provides the following functionalities:

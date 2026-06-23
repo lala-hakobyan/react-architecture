@@ -1,5 +1,5 @@
 # React Todo Starter App with Vite
-A lightweight React starter **Todo application** built with **Vite** to experiment with **Redux**, served by a local mock back-end API.
+A lightweight React starter **Todo application** built with **Vite** and **Redux**, powered by a local mock back-end API.
 
 ## About
 This is a simple React starter Todo application built with **Vite** which is designed to work locally with mock back-end API. It provides the following functionalities:
