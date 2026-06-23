@@ -1,6 +1,6 @@
 # React Architecture Starter Projects
 
-A collection of React starter projects designed to reflect best practices in modern React development. The projects are intended for experimenting and debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture foundations for real production apps.
+A collection of React starter projects designed to reflect best practices in modern React development. The projects are intended for debugging React features and frameworks, benchmarking performance and creating maintainable, scalable architecture foundations for real production apps.
 
 
 ## Projects
