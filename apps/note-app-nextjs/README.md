@@ -185,6 +185,10 @@ Set `NEXT_PUBLIC_ENABLE_ALL_DEBUG_EXPERIMENTS=true` to enable every experiment a
 - **`NEXT_PUBLIC_ENABLE_CONTACT_AUTH_API_ERROR`:** Simulates **CORS** error for Contact page `messages` API by performing direct call to back-end server (bypassing Next.js proxy) and eliminating caller domain from back-end server CORS policies.<br>
   Useful for inspecting CORS API errors in the **Network** and **Console** panels.
 
+- **`NEXT_PUBLIC_ENABLE_UNUSED_CODE`:** Simulates loading a large singleton class of helpers to use only its `capitalize` function, hence leaving the rest of the code as unused.<br>
+    Useful for debugging unused code and observing the inability to tree-shake a large singleton class using the **Coverage** panel.
+
+
 #### Debug Experiments: Other Scenarios
 
 There are other debug scenarios you can leverage in this branch:

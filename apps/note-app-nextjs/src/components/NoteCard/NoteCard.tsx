@@ -3,6 +3,9 @@ import Image from 'next/image';
 import React, { Fragment, memo, SyntheticEvent } from 'react';
 import { NoteCardProps } from '@/types/noteCard.types';
 import Icon from '@/components/Icon/Icon';
+import largeHelpersService from '@/services/largeHelpersService';
+
+const enableUnusedCode = process.env.NEXT_PUBLIC_ENABLE_UNUSED_CODE === 'true';
 
 function displayText(text:string) {
   const lines = text.split('\n');
@@ -68,7 +71,7 @@ const NoteCardComponent : React.FC<NoteCardProps> = ({ noteCard, onEdit, onDelet
         </div>
       }
       <div className={styles.noteCard__content}>
-        <h3>{noteCard.note.title}</h3>
+        <h3>{enableUnusedCode ? largeHelpersService.capitalize(noteCard.note.title) : noteCard.note.title}</h3>
         <p>{displayText(noteCard.note.description)}</p>
       </div>
     </article>
