@@ -5,44 +5,52 @@ import Loader from '@/components/Loader/Loader';
 import { DeleteNoteConstants } from '@/constants/deleteNote.constants';
 import { useShallow } from 'zustand/react/shallow';
 import { ActionStatus } from '@/store/notes/notesStore.types';
-import { useRef } from 'react';
+import { memo, useRef } from 'react';
 import { ModalRef } from '@/types/modal.types';
 import { debugFlags } from '@/debug-experiments/debugFlags';
+import DebugService from '@/debug-experiments/debugService';
 
-export default function DeleteNote() {
+function DeleteNote() {
   const modalRef = useRef<ModalRef>(null);
   const deleteNoteState = useNotesStore(useShallow(selectDeleteNoteSlice));
-  if(debugFlags.enableReactUnnecessaryRerender) {
+
+  if (debugFlags.enableReactUnnecessaryRerender) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const noteListState = useNotesStore(useShallow(selectNotesListSlice));
   }
 
-  const deleteAction = async() => {
+  if (debugFlags.enableReactUnnecessaryRerender) {
+    // Artificial render delay: Synchronously blocking the main thread
+    // This will make the component's block in the React Profiler flamegraph much wider.
+    DebugService.delayRendering(25);
+  }
+
+  const deleteAction = async () => {
     let actionStatus: ActionStatus | null = null;
 
-    if(deleteNoteState.currentDeleteNote) {
+    if (deleteNoteState.currentDeleteNote) {
       actionStatus = await deleteNoteState.deleteNote(deleteNoteState.currentDeleteNote.id);
     }
 
-    if(actionStatus?.success) {
+    if (actionStatus?.success) {
       modalRef.current?.close();
       resetDeleteModal();
     }
-  }
+  };
 
   const resetDeleteModal = () => {
     deleteNoteState.setCurrentDeleteNote(null, false);
-  }
+  };
 
   const resetErrorModal = () => {
     deleteNoteState.setIsNoteDeleteError(false);
     resetDeleteModal();
-  }
+  };
 
   const closeDeleteModal = () => {
     resetDeleteModal();
     modalRef.current?.close();
-  }
+  };
 
   return (
     <>
@@ -62,7 +70,8 @@ export default function DeleteNote() {
           <Modal.Footer>
             <Button
               button={{ label: 'Yes' }}
-              onClick={() => deleteAction()}/>
+              onClick={() => deleteAction()}
+            />
             <Button
               button={{ label: 'No', className: 'ml-xs' }}
               onClick={() => closeDeleteModal()}
@@ -80,5 +89,7 @@ export default function DeleteNote() {
         </Modal>
       }
     </>
-  )
+  );
 }
+
+export default memo(DeleteNote);

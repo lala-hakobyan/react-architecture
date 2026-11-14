@@ -158,11 +158,10 @@ Set `NEXT_PUBLIC_ENABLE_ALL_DEBUG_EXPERIMENTS=true` to enable every experiment a
 - **`NEXT_PUBLIC_ENABLE_ACTIONS_PROFILER`:** Wraps the `Actions` component with the React Profiler API `<Profiler>` wrapper. Any render taking longer than 1 ms emits a `console.warn` with phase, actual duration, base duration, start time and commit time.<br>
   Useful for debugging performance measurements for React components programmatically with **React Profiler** API.
 
-- **`NEXT_PUBLIC_ENABLE_REACT_UNNECESSARY_RERENDER`:** Artificially introduces unnecessary re-renders of `DeleteNote` component.
-  - It is rendered outside of `Actions`, always mounted in the `NoteList`.
-  - It subscribes to the `noteListState` Zustand slice without using its data, causing a re-render on every notes-list state change.
-    Therefore, when `NoteList` rerenders after editing or adding a note, `DeleteNote` also rerenders unnecessarily.
-
+- **`NEXT_PUBLIC_ENABLE_REACT_UNNECESSARY_RERENDER`:** Artificially introduces unnecessary re-renders of the `DeleteNote` component.
+  - The component is rendered outside of `Actions` and is always mounted in the `NoteList`.
+  - It subscribes to the `noteListState` Zustand slice without actually using its data. As a result, whenever `NoteList` updates (such as when adding or editing a note), `DeleteNote` unnecessarily re-renders as well.
+  - An artificial delay is added to the component's render cycle, making its block intentionally slow and visually prominent in the React Profiler flamegraph.
   Useful for practicing detection of unnecessary re-renders with **React DevTools Profiler**.
 
 - **`NEXT_PUBLIC_ENABLE_LOAD_MORE_CUSTOM_PERFORMANCE_TRACK`:** Adds custom **Performance Track** with marks and measure around the **Load More** action (`load-more-started`, `load-more-ended`, `Load More Complete`).
